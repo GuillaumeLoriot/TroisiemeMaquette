@@ -1,0 +1,291 @@
+body {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../pictures/header_image.avif);
+        object-fit: cover;
+        height: 350px;
+
+        div {
+
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            padding-top: 30px;
+            margin: auto;
+
+            img {
+                width: 75px;
+            }
+
+            nav {
+                ul {
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            margin: 0.5em;
+
+                            &.callToAction {
+                                background-color: rgb(33, 133, 208);
+                                padding: 7px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        hgroup {
+            text-align: center;
+            color: white;
+            margin: 2em;
+
+            h1 {
+                font-size: 5em;
+                font-weight: 900;
+                font-style: italic;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1.2em;
+                font-weight: 700;
+                margin: 0;
+            }
+
+
+        }
+
+    }
+
+    main {
+
+        section {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+
+                li {
+                    width: 50%;
+                    text-align: center;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+
+            &:first-of-type {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin: 0;
+
+                    li {
+                        padding: 3em 0;
+
+                        &:first-of-type {
+                            background-color: rgb(240, 240, 240);
+                        }
+
+                        &:last-of-type {
+                            background-color: rgb(240, 240, 240);
+                        }
+                    }
+                }
+            }
+
+            &#afterMapCards {
+                text-align: center;
+                margin-top: -100px;
+
+                hgroup {
+                    margin: 100px auto;
+                }
+
+                div {
+
+                    &#photoCards {
+                        display: flex;
+                        justify-content: center;
+
+                        ul {
+
+                            width: 100%;
+                            height: 250px;
+                            display: flex;
+                            width: 80%;
+
+
+                            li {
+                                background-size: 100%;
+                                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+                                color: white;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                h3 {
+                                    font-size: 1.5em;
+                                }
+
+                                &:first-of-type {
+                                    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../pictures/item1.avif);
+                                    object-fit: cover;
+                                }
+
+                                &:last-of-type {
+                                    background-image: linear-gradient(to right, rgba(33, 133, 208, 0.5), rgba(33, 133, 208, 0.5)), url(../pictures/item2.avif);
+                                    object-fit: cover;
+                                }
+
+                            }
+
+
+                        }
+
+                        @media screen and (max-width: 768px) {
+
+
+                            ul {
+
+                                width: 80%;
+
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 20em;
+
+                                li {
+                                    width: 100%;
+                                    padding: 5em 0;
+
+                                    p {
+                                        padding: 0 2%;
+                                    }
+
+
+
+                                }
+                            }
+                        }
+                    }
+
+                    &#simpleCards {
+                        ul {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            margin: 0;
+
+                            li {
+                                width: 34%;
+                                border-top: solid 1px rgba(0, 0, 0, 0.3);
+                                border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+                                padding: 2%;
+
+                                &#middleCard {
+                                    border: solid 1px rgba(0, 0, 0, 0.2);
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-of-type {
+                background-image: url(../pictures/main_image.avif);
+                background-size: 100%;
+                object-fit: cover;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                div {
+                    width: 40%;
+                    padding: 5% 0 5% 60%;
+
+
+                    h2 {
+                        margin: 0;
+                        width: 100%;
+                        margin-left: -15%;
+                        font-size: 1.6em;
+                    }
+
+                }
+
+                p {
+                    width: 70%;
+                    margin: 2em 0;
+                    line-height: 1.5em;
+                }
+
+                .callToAction {
+                    background-color: rgb(33, 133, 208);
+                    padding: 7px 10px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 24em;
+
+    p {
+        color: white;
+        line-height: 30px;
+    }
+
+    div {
+        width: 27%;
+        margin: 30px 15% 0 0;
+
+        img {
+            width: 75px;
+        }
+    }
+
+    address {
+        margin-top: 30px;
+
+        h4 {
+            color: white;
+            width: 50px;
+        }
+
+        p {
+            width: 60%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+}
